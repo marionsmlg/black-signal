@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLACK SIGNAL STUDIOS // NULL VECTOR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              void: '#070A0D',
+              charcoal: '#0E141B',
+              steel: '#2A323D',
+              ash: '#E6E9EE',
+              muted: '#9AA4AF',
+              critical: '#B11226',
+              corrupted: '#FF6A2B',
+              alien: '#2FE6D6',
+            },
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+              mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+            },
+            letterSpacing: {
+              'technical': '0.15em',
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'scan': 'scan 3s linear infinite',
+              'glitch': 'glitch 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both',
+              'glitch-skew': 'glitchSkew 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both',
+              'matrix-flash': 'matrixFlash 0.1s steps(2) infinite',
+              'terminal-blink': 'terminalBlink 1s step-end infinite',
+              'noise': 'noise 0.2s steps(4) infinite',
+            },
+            keyframes: {
+              scan: {
+                '0%': { transform: 'translateY(-100%)' },
+                '100%': { transform: 'translateY(100%)' },
+              },
+              glitch: {
+                '0%': { transform: 'translate(0)' },
+                '20%': { transform: 'translate(-3px, 3px)' },
+                '40%': { transform: 'translate(-3px, -3px)' },
+                '60%': { transform: 'translate(3px, 3px)' },
+                '80%': { transform: 'translate(3px, -3px)' },
+                '100%': { transform: 'translate(0)' },
+              },
+              glitchSkew: {
+                '0%': { transform: 'skew(0deg)' },
+                '20%': { transform: 'skew(-25deg)' },
+                '40%': { transform: 'skew(25deg)' },
+                '60%': { transform: 'skew(-15deg)' },
+                '80%': { transform: 'skew(15deg)' },
+                '100%': { transform: 'skew(0deg)' },
+              },
+              matrixFlash: {
+                '0%': { opacity: '1' },
+                '50%': { opacity: '0.7' },
+                '100%': { opacity: '1' },
+              },
+              terminalBlink: {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '0' },
+              },
+              noise: {
+                '0%': { transform: 'translate(0,0)' },
+                '10%': { transform: 'translate(-5%,-5%)' },
+                '20%': { transform: 'translate(-10%,5%)' },
+                '30%': { transform: 'translate(5%,-10%)' },
+                '40%': { transform: 'translate(-5%,15%)' },
+                '50%': { transform: 'translate(-10%,5%)' },
+                '60%': { transform: 'translate(15%,0)' },
+                '70%': { transform: 'translate(0,10%)' },
+                '80%': { transform: 'translate(-15%,0)' },
+                '90%': { transform: 'translate(10%,5%)' },
+                '100%': { transform: 'translate(5%,0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body { margin: 0; background-color: #070A0D; overflow: hidden; }
+      ::selection { background: #B11226; color: #E6E9EE; }
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: #0E141B; }
+      ::-webkit-scrollbar-thumb { background: #2A323D; }
+      
+      .glitch-text-part {
+        display: inline-block;
+      }
+
+      /* Custom Glitch Clip Paths */
+      .clip-glitch-1 { clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%); }
+      .clip-glitch-2 { clip-path: polygon(0 33%, 100% 33%, 100% 66%, 0 66%); }
+      .clip-glitch-3 { clip-path: polygon(0 66%, 100% 66%, 100% 100%, 0 100%); }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.5.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "three": "https://esm.sh/three@^0.182.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.25.0",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "zustand": "https://esm.sh/zustand@^5.0.9",
+    "postprocessing": "https://esm.sh/postprocessing@^6.38.2",
+    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@^3.0.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

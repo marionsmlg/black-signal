@@ -36,9 +36,9 @@ export const ManifestoSection: React.FC = () => {
                             <div className="h-full bg-ash w-2/3 animate-[pulse_3s_infinite]" />
                         </div>
                         <div className="mt-2 text-[8px] text-steel font-mono leading-tight">
-                            > ANALYZING GEOMETRY<br/>
-                            > OPTIMIZING MESH<br/>
-                            > COMPILING SHADERS...
+                            {'>'} ANALYZING GEOMETRY<br/>
+                            {'>'} OPTIMIZING MESH<br/>
+                            {'>'} COMPILING SHADERS...
                         </div>
                     </div>
                 </div>

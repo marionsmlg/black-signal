@@ -180,19 +180,19 @@ export const Chamber: React.FC = () => {
       {/* Dense, dark fog */}
       <fog attach="fog" args={['#030405', 2, 35]} />
 
-      <FloatingDebris />
-      <ScannerPulse />
+      {/* <FloatingDebris /> */}
+      {/* <ScannerPulse /> */}
 
       {/* Segments repeated for depth */}
-      <TunnelSegment position={[0, 0, 0]} zOffset={0} />
-      <TunnelSegment position={[0, 0, -20]} zOffset={-20} />
+      {/* <TunnelSegment position={[0, 0, 0]} zOffset={0} /> */}
+      {/* <TunnelSegment position={[0, 0, -20]} zOffset={-20} />
       <TunnelSegment position={[0, 0, -40]} zOffset={-40} />
       <TunnelSegment position={[0, 0, -60]} zOffset={-60} />
       <TunnelSegment position={[0, 0, -80]} zOffset={-80} />
-      <TunnelSegment position={[0, 0, -100]} zOffset={-100} />
+      <TunnelSegment position={[0, 0, -100]} zOffset={-100} /> */}
 
       {/* Room 2: Null Vector Artifact */}
-      <group position={[0, 0, -40]}>
+      {/* <group position={[0, 0, -40]}>
         <Float speed={2} rotationIntensity={0.5} floatIntensity={0.5}>
           <mesh ref={artifactRef}>
             <dodecahedronGeometry args={[2, 0]} />
@@ -202,18 +202,18 @@ export const Chamber: React.FC = () => {
               emissive="#E6E9EE"
               emissiveIntensity={0.5}
             />
-          </mesh>
+          </mesh> */}
           {/* Internal core */}
-          <mesh>
+          {/* <mesh>
              <dodecahedronGeometry args={[1.5, 0]} />
              <meshBasicMaterial color="#000000" />
           </mesh>
         </Float>
         <pointLight color="#2FE6D6" intensity={2} distance={10} decay={2} />
-      </group>
+      </group> */}
 
       {/* Room 3: Funding */}
-      <group position={[0, 0, -60]}>
+      {/* <group position={[0, 0, -60]}>
          <group ref={fundingCrateRef} position={[0, -1, 0]}>
             <mesh>
                 <boxGeometry args={[2, 2, 2]} />
@@ -225,10 +225,10 @@ export const Chamber: React.FC = () => {
             </mesh>
          </group>
          <pointLight color="#B11226" intensity={3} distance={10} position={[0, 0, 0]} />
-      </group>
+      </group> */}
 
       {/* Room 4: Integrity */}
-      <group position={[0, 0, -80]}>
+      {/* <group position={[0, 0, -80]}>
          <Grid 
             position={[0, -2.8, 0]} 
             rotation={[0, 0, 0]}
@@ -237,7 +237,7 @@ export const Chamber: React.FC = () => {
             sectionColor="#FF6A2B" 
             fadeDistance={15}
         />
-      </group>
+      </group> */}
 
        {/* Room 5: Terminal */}
        <group position={[0, 0, -100]}>

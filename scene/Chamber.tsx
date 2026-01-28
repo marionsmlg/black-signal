@@ -241,10 +241,10 @@ export const Chamber: React.FC = () => {
 
        {/* Room 5: Terminal */}
        <group position={[0, 0, -100]}>
-        <mesh position={[0, -1, 0]}>
+        {/* <mesh position={[0, -1, 0]}>
             <boxGeometry args={[4, 1, 2]} />
             <meshStandardMaterial color="#0E141B" metalness={0.9} roughness={0.2} />
-        </mesh>
+        </mesh> */}
         <rectAreaLight 
             width={4} 
             height={2} 

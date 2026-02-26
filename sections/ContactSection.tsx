@@ -4,15 +4,14 @@ import { GlitchWrapper } from '../components/GlitchWrapper';
 
 export const ContactSection: React.FC = () => {
   return (
-    <div className="h-full w-full flex items-center justify-center p-6">
+    <div className="min-h-full w-full flex items-center justify-center p-6 py-8">
       <div className="w-full max-w-3xl grid md:grid-cols-2 gap-8">
-        
-        {/* Contact Form */}
+
+        {/* Contact Form — always visible */}
         <div className="bg-charcoal border border-steel p-8 relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-alien to-transparent" />
-          
           <GlitchWrapper>
-             <h2 className="text-2xl text-ash font-bold mb-6">ESTABLISH UPLINK</h2>
+            <h2 className="text-2xl text-ash font-bold mb-6">ESTABLISH UPLINK</h2>
           </GlitchWrapper>
           <form className="space-y-4">
             <div>
@@ -31,8 +30,8 @@ export const ContactSection: React.FC = () => {
           </form>
         </div>
 
-        {/* Careers / Info */}
-        <div className="flex flex-col justify-between py-4">
+        {/* Careers — desktop only */}
+        <div className="hidden md:flex flex-col justify-between py-4">
           <div>
             <h3 className="text-steel font-mono text-xs tracking-widest mb-4">CAREER OPPORTUNITIES</h3>
             <h2 className="text-3xl text-ash font-bold mb-4">JOIN THE SIGNAL</h2>
@@ -55,11 +54,10 @@ export const ContactSection: React.FC = () => {
               </li>
             </ul>
           </div>
-          
-          <div className="text-center md:text-left">
-             <a href="#" className="text-muted hover:text-ash text-xs font-mono uppercase transition-colors">
-               Legal // Privacy // Terms
-             </a>
+          <div className="text-left">
+            <a href="#" className="text-muted hover:text-ash text-xs font-mono uppercase transition-colors">
+              Legal // Privacy // Terms
+            </a>
           </div>
         </div>
 

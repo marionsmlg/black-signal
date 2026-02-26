@@ -26,13 +26,11 @@ export const useStore = create<AppState>((set) => ({
   }),
   
   setScrollProgress: (progress) => set((state) => {
-    // Clamp between 0 and max sections
-    const clamped = Math.max(0, Math.min(Object.keys(SectionId).length / 2 - 1, progress));
-    const nearestSection = Math.round(clamped);
-    
+    // Clamping is handled by the caller (Interface handlers)
+    const nearestSection = Math.round(progress);
     return {
-      scrollProgress: clamped,
-      targetSection: clamped,
+      scrollProgress: progress,
+      targetSection: progress,
       currentSection: nearestSection !== state.currentSection ? nearestSection : state.currentSection
     };
   }),

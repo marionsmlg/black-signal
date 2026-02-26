@@ -12,7 +12,7 @@ export const GameSection: React.FC = () => {
   ];
 
   return (
-    <div className="h-full w-full flex flex-col items-center justify-center pointer-events-none">
+    <div className="min-h-full w-full flex flex-col items-center justify-center pointer-events-none py-8">
       {/* Content wrapper - pointer events auto to allow interaction with buttons */}
       <div className="pointer-events-auto flex flex-col items-center gap-12 mt-32 md:mt-0">
         

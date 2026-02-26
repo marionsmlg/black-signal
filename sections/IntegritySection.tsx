@@ -4,7 +4,7 @@ import { GlitchWrapper } from '../components/GlitchWrapper';
 
 export const IntegritySection: React.FC = () => {
   return (
-    <div className="h-full w-full flex items-center justify-center px-6 md:px-20 lg:px-32">
+    <div className="min-h-full w-full flex items-center justify-center px-6 md:px-20 lg:px-32 py-8">
       <div className="grid md:grid-cols-2 gap-16 w-full max-w-6xl items-center">
         
         {/* Visual Decoration - Moved to Left Column to balance layout */}

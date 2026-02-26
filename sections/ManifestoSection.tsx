@@ -5,7 +5,7 @@ import { Cpu, Activity } from 'lucide-react';
 
 export const ManifestoSection: React.FC = () => {
   return (
-    <div className="h-full w-full flex items-center justify-center px-6 md:px-12 lg:px-24">
+    <div className="min-h-full w-full flex items-center justify-center px-6 md:px-12 lg:px-24 py-8">
       <div className="w-full max-w-7xl grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
         
         {/* Left Column: Visual/Technical Data - Fills the empty space */}
